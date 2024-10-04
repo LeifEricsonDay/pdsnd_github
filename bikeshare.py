@@ -19,8 +19,7 @@ def get_filters():
     # TO DO: get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
     invalid_input = True
     while invalid_input:
-        city = input("Which city would you like information on? Enter an option from (chicago, new york city, or washington). \n")
-        city = city.lower()
+        city = input("Which city would you like information on? Enter an option from (chicago, new york city, or washington). \n").lower()
         if city not in ["chicago", "new york city", "washington"]:
             print("You didn't input a valid city, please try again")
         else:
@@ -29,8 +28,7 @@ def get_filters():
     # TO DO: get user input for month (all, january, february, ... , june)
     invalid_input = True
     while invalid_input:
-        month = input("Which month (if any) would you like information on? Enter an option from (all, january, february, ... , june) \n")
-        month = month.lower()
+        month = input("Which month (if any) would you like information on? Enter an option from (all, january, february, ... , june) \n").lower()
         if month not in ["all", "january", "february", "march", "april", "may", "june"]:
             print("You didn't input a valid month, please try again")
         else:
@@ -39,8 +37,7 @@ def get_filters():
     # TO DO: get user input for day of week (all, monday, tuesday, ... sunday)
     invalid_input = True
     while invalid_input:
-        day = input("Which day (if any) would you like information on? Enter an option from (all, monday, tuesday, ..., sunday) \n")
-        day = day.lower()
+        day = input("Which day (if any) would you like information on? Enter an option from (all, monday, tuesday, ..., sunday) \n").lower()
         if day not in ["all", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"]:
             print("You didn't input a valid day, please try again")
         else:
